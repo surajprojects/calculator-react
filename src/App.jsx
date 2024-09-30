@@ -1,5 +1,5 @@
-import "./App.css";
-import Calculator from "./components/Calculator/Calculator";
+import "./App.css"; // Importing the CSS file for styling the application
+import Calculator from "./components/Calculator/Calculator"; // Importing the Calculator component from the components directory
 
 function App() {
   return (
@@ -7,6 +7,6 @@ function App() {
       <Calculator />
     </>
   );
-};
+}
 
 export default App;

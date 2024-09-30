@@ -1,7 +1,11 @@
+// Importing required Material UI components and functions
+
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid2';
 import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+// Creating a custom theme with a yellow palette
 
 const theme = createTheme({
     palette: {
@@ -14,12 +18,18 @@ const theme = createTheme({
     },
 });
 
+// CalculatorButtons component to render the calculator buttons
+
 export default function CalculatorButtons({ toggleBtn, handleClick }) {
     return (
         <>
             <ThemeProvider theme={theme}>
                 <Box sx={{ flexGrow: 1, p: 3 }}>
+
+                    {/* Grid container to organize buttons in a grid layout */}
                     <Grid container spacing={3}>
+
+                        {/* Each Grid contains a button with corresponding text */}
                         <Grid size={3.5}>
                             <Button variant="contained" size="large" color="yellow" onClick={handleClick} >{toggleBtn ? "ON" : "OFF"}</Button>
                         </Grid>
