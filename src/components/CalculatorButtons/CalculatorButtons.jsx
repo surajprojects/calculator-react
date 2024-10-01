@@ -1,19 +1,19 @@
 // Importing required Material UI components and functions
 
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid2';
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid2";
 import Button from "@mui/material/Button";
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 // Creating a custom theme with a yellow palette
 
 const theme = createTheme({
     palette: {
         yellow: {
-            main: '#ffc300',
-            light: '#ffd000',
-            dark: '#ffb700',
-            contrastText: '#242105',
+            main: "#ffc300",
+            light: "#ffd000",
+            dark: "#ffb700",
+            contrastText: "#242105",
         },
     },
 });
